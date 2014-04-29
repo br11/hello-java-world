@@ -12,13 +12,13 @@ javac App.java
 java App Guest
 
 ### Empacotando a aplicação
-jar -cf system.jar Greetings.class GreetingsService.class App.class
+jar -cf app.jar Greetings.class GreetingsService.class App.class
 
 ### Executando a classe App do pacote system.jar
-java -classpath system.jar App Guest
+java -classpath app.jar App Guest
 
 ### Reempacotando a aplicação com arquivo de manifesto
-jar -cfm system.jar manifest.txt Greetings.class GreetingsService.class App.class
+jar -cfm app.jar manifest.txt Greetings.class GreetingsService.class App.class
 
 ### Executando a aplicação empacotada
-java -jar system.jar Guest
+java -jar app.jar Guest

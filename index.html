@@ -55,22 +55,22 @@ javac App.java
 
 <p>Empacotando a aplicação</p>
 
-<pre><code>jar -cf system.jar Greetings.class GreetingsService.class App.class
+<pre><code>jar -cf app.jar Greetings.class GreetingsService.class App.class
 </code></pre>
 
 <p>Executando a classe App do pacote system.jar</p>
 
-<pre><code>java -classpath system.jar App Guest
+<pre><code>java -classpath app.jar App Guest
 </code></pre>
 
 <p>Reempacotando a aplicação com arquivo de manifesto</p>
 
-<pre><code>jar -cfm system.jar manifest.txt Greetings.class GreetingsService.class App.class
+<pre><code>jar -cfm app.jar manifest.txt Greetings.class GreetingsService.class App.class
 </code></pre>
 
 <p>Executando a aplicação empacotada</p>
 
-<pre><code>java -jar system.jar Guest
+<pre><code>java -jar app.jar Guest
 </code></pre>
       </section>
       <footer>
